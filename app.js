@@ -32,13 +32,20 @@ if (numbersCalled.length === 90) {
 }
 }
 
+
+
 // Add an event listener to the new game button
 var newGameButton = document.getElementById("new-game-button");
+var bingoButton = document.getElementById("bingoButton");
 newGameButton.addEventListener("click", function() {
 // Reload the page to start a new game
 location.reload();
 });
 
+var bingoButton = document.getElementById("bingo-button");
+bingoButton.addEventListener("click", function() {
+location.reload();
+});
 // Initially hide the new game button
 newGameButton.style.display = "none";
 
