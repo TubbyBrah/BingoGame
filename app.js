@@ -19,10 +19,11 @@ function callNumber() {
   // Display previous numbers called
   previousNumbersElement.textContent = "Previous Numbers Called: " + numbersCalled.join(", ");
 
+  var message = "Bingo!\nAll 90 numbers have been called.\nClick the START NEW GAME button to start a new game.";
 
 // Check if all numbers have been called
 if (numbersCalled.length === 90) {
-  alert("Bingo! All 90 numbers have been called. Click the start new game button to start a new game");
+  alert(message);
 
   // Enable the new game button
   // Enable the new game button and display it
